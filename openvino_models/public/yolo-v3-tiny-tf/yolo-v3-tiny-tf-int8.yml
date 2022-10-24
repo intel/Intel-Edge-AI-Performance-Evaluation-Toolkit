@@ -1,0 +1,47 @@
+models:
+  - name: yolo-v3-tiny-tf
+    launchers:
+      - framework: openvino
+        device: CPU
+        adapter:
+          type: yolo_v3
+          anchors: tiny_yolo_v3
+          num: 3
+          coords: 4
+          classes: 80
+          threshold: 0.001
+          anchor_masks: [[3, 4, 5], [1, 2, 3]]
+          outputs:
+            - conv2d_9/Conv2D/YoloRegion
+            - conv2d_12/Conv2D/YoloRegion
+    datasets:
+      - name: ms_coco_detection_80_class_without_background
+        annotation_conversion:
+          converter: mscoco_detection
+          annotation_file:  /mnt/coco_dataset/annotations/instances_val2017.json
+        data_source: /mnt/coco_dataset/val2017
+        preprocessing:
+          - type: resize
+            size: 416
+
+        postprocessing:
+          - type: resize_prediction_boxes
+          - type: filter
+            apply_to: prediction
+            min_confidence: 0.001
+            remove_filtered: True
+          - type: nms
+            overlap: 0.5
+          - type: clip_boxes
+            apply_to: prediction
+
+        metrics:
+          - type: map
+            integral: 11point
+            ignore_difficult: true
+            presenter: print_scalar
+            reference: 0.359
+          - type: coco_precision
+            max_detections: 100
+            threshold: 0.5
+            reference: 0.397

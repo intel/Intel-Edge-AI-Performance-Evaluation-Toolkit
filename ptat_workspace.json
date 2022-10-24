@@ -1,0 +1,33 @@
+{
+    "PTATWorkSpace": {
+        "MONITORCHECKED": {
+            "CPU-Info$1- Core Active": "",
+            "CPU0$DTS": "",
+            "CPU0$Frequency": "",
+            "CPU0$Turbo Capability": "",
+            "CPU0$is CPU Throttling": "",
+            "Gfx Component$Current Unslice-Gfx Frequency": "",
+            "Gfx Component$DTS": "",
+            "Gfx Component$P0 Frequency": "",
+            "Miscellaneous$MSR Package Temperature": "",
+            "Power$EWMA Power": "",
+            "Power$GT Power": "",
+            "Power$IA Power": ""
+        },
+        "USERCHECKED": {
+            "DisplayRefreshRate": 1000,
+            "LogSettings": {
+                "log": {
+                    "fileName": "PTATMonitor.csv",
+                    "flag": 3,
+                    "format": "csv",
+                    "logType": "monitor",
+                    "syncPeriod": 10000
+                }
+            },
+            "PollingTime": 1000,
+            "ResetControlsOnClose": true
+        },
+        "Version": 1.0
+    }
+}

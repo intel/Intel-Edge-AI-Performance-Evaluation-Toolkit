@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="batch_normalization_8/FusedBatchNorm:0" out_port_id="batch_normalization_8/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_8/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="249"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_3/LeakyRelu:0" out_port_id="leaky_re_lu_3/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_3/LeakyRelu" out_port_id="2" id="106"/>
+	</map>
+	<map>
+		<framework name="image_input" out_port_id="image_input"/>
+		<IR name="image_input" out_port_id="0" id="45"/>
+	</map>
+	<map>
+		<framework name="image_input:0" out_port_id="image_input:0"/>
+		<IR name="image_input" out_port_id="0" id="45"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_4/LeakyRelu:0" out_port_id="leaky_re_lu_4/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_4/LeakyRelu" out_port_id="2" id="121"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_6/LeakyRelu:0" out_port_id="leaky_re_lu_6/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_6/LeakyRelu" out_port_id="2" id="151"/>
+	</map>
+	<map>
+		<framework name="conv2d_12/Conv2D:0" out_port_id="conv2d_12/Conv2D:0"/>
+		<IR name="conv2d_12/Conv2D" out_port_id="2" id="231"/>
+	</map>
+	<map>
+		<framework name="conv2d_9/Conv2D:0" out_port_id="conv2d_9/Conv2D:0"/>
+		<IR name="conv2d_9/Conv2D" out_port_id="2" id="260"/>
+	</map>
+	<map>
+		<framework name="up_sampling2d/strided_slice/stack:0" out_port_id="up_sampling2d/strided_slice/stack:0"/>
+		<IR name="up_sampling2d/strided_slice/stack251" out_port_id="0" id="184"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_5/FusedBatchNorm:0" out_port_id="batch_normalization_5/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_5/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="133"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_1/FusedBatchNorm:0" out_port_id="batch_normalization_1/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_1/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="73"/>
+	</map>
+	<map>
+		<framework name="up_sampling2d/Const:0" out_port_id="up_sampling2d/Const:0"/>
+		<IR name="up_sampling2d/Const2552986" out_port_id="0" id="188"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_2/FusedBatchNorm:0" out_port_id="batch_normalization_2/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_2/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="88"/>
+	</map>
+	<map>
+		<framework name="concatenate/concat:0" out_port_id="concatenate/concat:0"/>
+		<IR name="concatenate/concat" out_port_id="2" id="210"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d/MaxPool:0" out_port_id="max_pooling2d/MaxPool:0"/>
+		<IR name="max_pooling2d/MaxPool" out_port_id="1" id="63"/>
+	</map>
+	<map>
+		<framework name="up_sampling2d/strided_slice/stack_2:0" out_port_id="up_sampling2d/strided_slice/stack_2:0"/>
+		<IR name="up_sampling2d/strided_slice/stack_2253" out_port_id="0" id="186"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_1/LeakyRelu:0" out_port_id="leaky_re_lu_1/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_1/LeakyRelu" out_port_id="2" id="76"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu/LeakyRelu:0" out_port_id="leaky_re_lu/LeakyRelu:0"/>
+		<IR name="leaky_re_lu/LeakyRelu" out_port_id="2" id="61"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_4/FusedBatchNorm:0" out_port_id="batch_normalization_4/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_4/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="118"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_2/LeakyRelu:0" out_port_id="leaky_re_lu_2/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_2/LeakyRelu" out_port_id="2" id="91"/>
+	</map>
+	<map>
+		<framework name="up_sampling2d/mul:0" out_port_id="up_sampling2d/mul:0"/>
+		<IR name="up_sampling2d/ResizeNearestNeighbor/Cast_1" out_port_id="1" id="207"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_9/LeakyRelu:0" out_port_id="leaky_re_lu_9/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_9/LeakyRelu" out_port_id="2" id="179"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_3/FusedBatchNorm:0" out_port_id="batch_normalization_3/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_3/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="103"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_9/FusedBatchNorm:0" out_port_id="batch_normalization_9/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_9/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="176"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d_4/MaxPool:0" out_port_id="max_pooling2d_4/MaxPool:0"/>
+		<IR name="max_pooling2d_4/MaxPool" out_port_id="1" id="123"/>
+	</map>
+	<map>
+		<framework name="up_sampling2d/Shape:0" out_port_id="up_sampling2d/Shape:0"/>
+		<IR name="up_sampling2d/Shape/GatherNCHWtoNHWC" out_port_id="3" id="183"/>
+	</map>
+	<map>
+		<framework name="batch_normalization/FusedBatchNorm:0" out_port_id="batch_normalization/FusedBatchNorm:0"/>
+		<IR name="batch_normalization/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="58"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d_2/MaxPool:0" out_port_id="max_pooling2d_2/MaxPool:0"/>
+		<IR name="max_pooling2d_2/MaxPool" out_port_id="1" id="93"/>
+	</map>
+	<map>
+		<framework name="up_sampling2d/strided_slice/stack_1:0" out_port_id="up_sampling2d/strided_slice/stack_1:0"/>
+		<IR name="up_sampling2d/strided_slice/stack_1252" out_port_id="0" id="185"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_7/FusedBatchNorm:0" out_port_id="batch_normalization_7/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_7/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="162"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d_3/MaxPool:0" out_port_id="max_pooling2d_3/MaxPool:0"/>
+		<IR name="max_pooling2d_3/MaxPool" out_port_id="1" id="108"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_6/FusedBatchNorm:0" out_port_id="batch_normalization_6/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_6/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="148"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_10/FusedBatchNorm:0" out_port_id="batch_normalization_10/FusedBatchNorm:0"/>
+		<IR name="batch_normalization_10/FusedBatchNorm/variance/Fused_Add_" out_port_id="2" id="220"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_5/LeakyRelu:0" out_port_id="leaky_re_lu_5/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_5/LeakyRelu" out_port_id="2" id="136"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_7/LeakyRelu:0" out_port_id="leaky_re_lu_7/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_7/LeakyRelu" out_port_id="2" id="165"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_8/LeakyRelu:0" out_port_id="leaky_re_lu_8/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_8/LeakyRelu" out_port_id="2" id="252"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d_5/MaxPool:0" out_port_id="max_pooling2d_5/MaxPool:0"/>
+		<IR name="max_pooling2d_5/MaxPool" out_port_id="1" id="138"/>
+	</map>
+	<map>
+		<framework name="leaky_re_lu_10/LeakyRelu:0" out_port_id="leaky_re_lu_10/LeakyRelu:0"/>
+		<IR name="leaky_re_lu_10/LeakyRelu" out_port_id="2" id="223"/>
+	</map>
+	<map>
+		<framework name="conv2d_12/Conv2D/YoloRegion" out_port_id="conv2d_12/Conv2D/YoloRegion"/>
+		<IR name="conv2d_12/Conv2D/YoloRegion" out_port_id="1" id="233"/>
+	</map>
+	<map>
+		<framework name="conv2d_12/Conv2D/YoloRegion:0" out_port_id="conv2d_12/Conv2D/YoloRegion:0"/>
+		<IR name="conv2d_12/Conv2D/YoloRegion" out_port_id="1" id="233"/>
+	</map>
+	<map>
+		<framework name="conv2d_9/Conv2D/YoloRegion" out_port_id="conv2d_9/Conv2D/YoloRegion"/>
+		<IR name="conv2d_9/Conv2D/YoloRegion" out_port_id="1" id="262"/>
+	</map>
+	<map>
+		<framework name="conv2d_9/Conv2D/YoloRegion:0" out_port_id="conv2d_9/Conv2D/YoloRegion:0"/>
+		<IR name="conv2d_9/Conv2D/YoloRegion" out_port_id="1" id="262"/>
+	</map>
+	<map>
+		<framework name="up_sampling2d/ResizeNearestNeighbor:0" out_port_id="up_sampling2d/ResizeNearestNeighbor:0"/>
+		<IR name="up_sampling2d/ResizeNearestNeighbor" out_port_id="4" id="208"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d_1/MaxPool:0" out_port_id="max_pooling2d_1/MaxPool:0"/>
+		<IR name="max_pooling2d_1/MaxPool" out_port_id="1" id="78"/>
+	</map>
+	<map>
+		<framework name="up_sampling2d/strided_slice:0" out_port_id="up_sampling2d/strided_slice:0"/>
+		<IR name="up_sampling2d/strided_slice" out_port_id="4" id="187"/>
+	</map>
+</mapping>

@@ -1,0 +1,29 @@
+INFO:openvino.tools.pot.app.run:Output log dir: /mnt/openvino_models/public/yolo-v3-tiny-tf/FP16-INT8/yolo-v3-tiny-tf_DefaultQuantization/2022-08-04_05-46-04
+INFO:openvino.tools.pot.app.run:Creating pipeline:
+ Algorithm: DefaultQuantization
+ Parameters:
+	preset                     : performance
+	stat_subset_size           : 300
+	target_device              : ANY
+	model_type                 : None
+	dump_intermediate_model    : False
+	inplace_statistics         : True
+	exec_log_dir               : /mnt/openvino_models/public/yolo-v3-tiny-tf/FP16-INT8/yolo-v3-tiny-tf_DefaultQuantization/2022-08-04_05-46-04
+ ===========================================================================
+INFO:openvino.tools.pot.pipeline.pipeline:Inference Engine version:                2022.1.0-7019-cdb9bec7210-releases/2022/1
+INFO:openvino.tools.pot.pipeline.pipeline:Model Optimizer version:                 2022.1.0-7019-cdb9bec7210-releases/2022/1
+INFO:openvino.tools.pot.pipeline.pipeline:Post-Training Optimization Tool version: 2022.1.0-7019-cdb9bec7210-releases/2022/1
+INFO:openvino.tools.pot.statistics.collector:Start computing statistics for algorithms : DefaultQuantization
+INFO:openvino.tools.pot.statistics.collector:Computing statistics finished
+INFO:openvino.tools.pot.pipeline.pipeline:Start algorithm: DefaultQuantization
+INFO:openvino.tools.pot.algorithms.quantization.default.algorithm:Start computing statistics for algorithm : ActivationChannelAlignment
+INFO:openvino.tools.pot.algorithms.quantization.default.algorithm:Computing statistics finished
+INFO:openvino.tools.pot.algorithms.quantization.default.algorithm:Start computing statistics for algorithms : MinMaxQuantization,FastBiasCorrection
+INFO:openvino.tools.pot.algorithms.quantization.default.algorithm:Computing statistics finished
+INFO:openvino.tools.pot.pipeline.pipeline:Finished: DefaultQuantization
+ ===========================================================================
+INFO:openvino.tools.pot.pipeline.pipeline:Evaluation of generated model
+INFO:openvino.tools.pot.engines.ac_engine:Start inference on the whole dataset
+INFO:openvino.tools.pot.engines.ac_engine:Inference finished
+INFO:openvino.tools.pot.app.run:map                        : 0.35638613189657226
+INFO:openvino.tools.pot.app.run:coco_precision             : 0.3932753353568194

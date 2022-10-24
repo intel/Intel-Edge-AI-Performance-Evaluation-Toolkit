@@ -1,0 +1,54 @@
+models:
+  - name: yolo-v4-tf
+    launchers:
+      - framework: openvino
+        device: CPU
+        adapter:
+          type: yolo_v3
+          anchors: 12,16,19,36,40,28,36,75,76,55,72,146,142,110,192,243,459,401
+          num: 3
+          coords: 4
+          classes: 80
+          threshold: 0.001
+          anchor_masks: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+          raw_output: True
+          output_format: HWB
+          outputs:
+            - Func/StatefulPartitionedCall/output/_544
+            - Func/StatefulPartitionedCall/output/_542
+            - Func/StatefulPartitionedCall/output/_543                  
+    datasets:
+      - name: ms_coco_detection_80_class_without_background
+        annotation_conversion:
+          converter: mscoco_detection
+          annotation_file:  /home/openvino/coco_dataset/annotations/instances_val2017.json
+        data_source: /home/openvino/coco_dataset/val2017
+        preprocessing:
+          - type: resize
+            size: 608
+        postprocessing:
+          - type: resize_prediction_boxes
+          - type: filter
+            apply_to: prediction
+            min_confidence: 0.001
+            remove_filtered: true
+          - type: diou_nms
+            overlap: 0.5
+          - type: clip_boxes
+            apply_to: prediction
+        metrics:
+          - type: map
+            integral: 11point
+            ignore_difficult: true
+            presenter: print_scalar
+            reference: 0.7123
+          - name: AP@0.5
+            type: coco_precision
+            max_detections: 100
+            threshold: 0.5
+            reference: 0.774
+          - name: AP@0.5:0.05:95
+            type: coco_precision
+            max_detections: 100
+            threshold: '0.5:0.05:0.95'
+            reference: 0.5026

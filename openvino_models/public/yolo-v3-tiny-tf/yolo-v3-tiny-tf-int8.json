@@ -1,0 +1,21 @@
+{
+    "model": {
+        "model_name": "yolo-v3-tiny-tf",
+        "model": "/mnt/openvino_models/public/yolo-v3-tiny-tf/FP16/yolo-v3-tiny-tf.xml",
+        "weights": "/mnt/openvino_models/public/yolo-v3-tiny-tf/FP16/yolo-v3-tiny-tf.bin"
+    },
+    "engine": {
+        "config": "/mnt/yolo-v3-tiny-tf-int8.yml"
+    },
+    "compression": {
+        "algorithms": [
+            {
+                "name": "DefaultQuantization",
+                "params": {
+                    "preset": "performance",
+                    "stat_subset_size": 300
+                }
+            }
+        ]
+    }
+}
