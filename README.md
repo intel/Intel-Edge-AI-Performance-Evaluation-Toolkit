@@ -19,6 +19,8 @@ It consists of scripts, configuration files, Intel Thermal Analysis Tool (TAT) w
 * Intel® Core™ i7-1165G7 Processor
 * Intel® Core™ i7-1185G7E Processor
 * Intel® Celeron® 6305E
+* Intel® Core™ i7-1265U Processor
+* Intel® Core™ i9-12900 Processor
 
 
 ## License
