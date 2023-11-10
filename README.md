@@ -194,6 +194,14 @@ bash tools/download_coco_dataset.sh
 bash quantize_yolo-v3-tf_int8.sh
 ```
 
+## Intel® Arc Graphics and Data Center GPU
+
+There are detail installation guides
+
+For Intel® Data Center GPU Max Series and Intel® Data Center GPU Flex Series, please refer to https://dgpu-docs.intel.com/driver/installation.html.
+
+For Arc GPUs, please refer to https://dgpu-docs.intel.com/driver/client/overview.html
+
 ## How to contribute
 See [CONTRIBUTING](https://github.com/intel/Intel-Edge-AI-Performance-Evaluation-Toolkit/blob/main/CONTRIBUTING.md) for details. Thank you!
 
