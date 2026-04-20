@@ -1,6 +1,11 @@
-# Intel® Edge AI Performance Evaluation Toolkit User Guide
+# THIS PROJECT IS ARCHIVED   
+Intel will not provide or guarantee development of or support for this project, including but not limited to, maintenance, bug fixes, new releases or updates.  
+Patches to this project are no longer accepted by Intel.  
+ If you have an ongoing need to use this project, are interested in independently developing it, or would like to maintain patches for the community, please create your own fork of the project.  
+  
+# IntelÂ® Edge AI Performance Evaluation Toolkit User Guide
 
-Intel® Edge AI Performance Evaluation Toolkit is an Edge AI customer enabling tool that has been designed to easily qualify and evaluate platform deep learning inference performance.
+IntelÂ® Edge AI Performance Evaluation Toolkit is an Edge AI customer enabling tool that has been designed to easily qualify and evaluate platform deep learning inference performance.
 
 
 ## Components
@@ -16,15 +21,15 @@ It consists of scripts, configuration files, Intel Thermal Analysis Tool (TAT) w
 
 ## Supported HW
 
-* Intel® Core™ i7-1165G7 Processor
-* Intel® Core™ i7-1185G7E Processor
-* Intel® Celeron® 6305E
-* Intel® Core™ i7-1265U Processor
-* Intel® Core™ i9-12900 Processor
+* IntelÂ® Coreâ„¢ i7-1165G7 Processor
+* IntelÂ® Coreâ„¢ i7-1185G7E Processor
+* IntelÂ® CeleronÂ® 6305E
+* IntelÂ® Coreâ„¢ i7-1265U Processor
+* IntelÂ® Coreâ„¢ i9-12900 Processor
 
 
 ## License
-Intel® Edge AI Performance Evaluation  is licensed under MIT License. By contributing to the project, you agree to the license and copyright terms therein and release your contribution under these terms.
+IntelÂ® Edge AI Performance Evaluation  is licensed under MIT License. By contributing to the project, you agree to the license and copyright terms therein and release your contribution under these terms.
 
 
 ## User Guide
@@ -36,7 +41,7 @@ Below are steps to get started for Ubuntu 20.04.4 and Windows 10 21H2
 **Install Ubuntu 20.04.4**
 https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview
 
-**Clone Intel® Edge AI Performance Evaluation Toolkit**
+**Clone IntelÂ® Edge AI Performance Evaluation Toolkit**
 
 ```=bash
 sudo apt update
@@ -56,7 +61,7 @@ Reboot system.
 
 **Install Intel Power and Thermal Analysis Tool**
 
-Tool download link : [Intel® Power And Thermal Analysis Tool](https://www.intel.com/content/www/us/en/secure/design/confidential/software-kits/kit-details.html?kitId=637737)
+Tool download link : [IntelÂ® Power And Thermal Analysis Tool](https://www.intel.com/content/www/us/en/secure/design/confidential/software-kits/kit-details.html?kitId=637737)
 
 ![](https://i.imgur.com/JQ9QPDp.png)
 
@@ -106,7 +111,7 @@ bash quantize_yolo-v3-tf_int8.sh
 * Install required graphic driver (30.0.101.xxxx)
 
 
-**Download Intel® Edge AI Performance Evaluation Toolkit github link below**
+**Download IntelÂ® Edge AI Performance Evaluation Toolkit github link below**
 
 https://github.com/intel/Intel-Edge-AI-Performance-Evaluation-Toolkit/archive/refs/heads/main.zip
 
@@ -118,7 +123,7 @@ Extract to C:\Users\Public\Intel-Edge-AI-Performance-Evaluation-Toolkit.
 Please refere to tools\enable-hyper-v.p1 and run below,
 
 ```
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All 
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V â€“All 
 ```
 
 Press Y to reboot system.
@@ -144,7 +149,7 @@ Reboot to activate docker settings.
 
 **Install Intel Power and Thermal Analysis Tool**
 
-Tool download link : [Intel® Power And Thermal Analysis Tool](https://www.intel.com/content/www/us/en/secure/design/confidential/software-kits/kit-details.html?kitId=637737)
+Tool download link : [IntelÂ® Power And Thermal Analysis Tool](https://www.intel.com/content/www/us/en/secure/design/confidential/software-kits/kit-details.html?kitId=637737)
 
 ![](https://i.imgur.com/eIBHHVw.png)
 
@@ -194,11 +199,11 @@ bash tools/download_coco_dataset.sh
 bash quantize_yolo-v3-tf_int8.sh
 ```
 
-## Intel® Arc Graphics and Data Center GPU
+## IntelÂ® Arc Graphics and Data Center GPU
 
 There are detail installation guides
 
-For Intel® Data Center GPU Max Series and Intel® Data Center GPU Flex Series, please refer to https://dgpu-docs.intel.com/driver/installation.html.
+For IntelÂ® Data Center GPU Max Series and IntelÂ® Data Center GPU Flex Series, please refer to https://dgpu-docs.intel.com/driver/installation.html.
 
 For Arc GPUs, please refer to https://dgpu-docs.intel.com/driver/client/overview.html
 
